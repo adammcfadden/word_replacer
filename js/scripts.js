@@ -11,6 +11,10 @@ var wordReplace = function(sentence, findWord, replaceWord) {
   return sentence;
 }
 
+
+
+
+
 $(document).ready(function() {
   $("#word_replace").submit(function(event) {
     var sentence = ($("input#sentence_input").val());

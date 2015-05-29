@@ -9,17 +9,17 @@
   <body>
     <div class="jumbotron">
       <div class="container">
-        <h1>Find and Replace words</h1>
+        <h1>Find and Replace Words</h1>
         <p class="lead"><br>Enter a sentence and a word to find, then enter a word to replace that with and see as it is replaced through the sentence.</p>
         <form id="word_replace">
           <div class="form-group">
             <label for="sentence_input"><b>Sentence:</b></label>
-            <input id="sentence_input" type="text" class="form-control">
+            <input required id="sentence_input" type="text" class="form-control">
             <br>
             <label for="find_input"><b>Word to Find:</b></label>
-            <input id="find_input" type="text">
+            <input required id="find_input" type="text">
             <label for="replace_input"><b>Replace With:</b></label>
-            <input id="replace_input" type="text">
+            <input required id="replace_input" type="text">
           </div>
           <div id="result">
             <div class="alert alert-info"><p><em><span class="output"></span></em></p></div>
