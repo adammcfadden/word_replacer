@@ -12,4 +12,9 @@ describe("wordReplace", function(){
     sentence = "The dog went for a dog walk.";
     expect(wordReplace(sentence, "dog", "cat")).to.equal("The cat went for a cat walk.");
   });
+
+  it("will find a word within a sentence even if there is punctuation following the word, and replace that word with the given word in multiple places.", function() {
+    sentence = "The dog, went for a dog, walk.";
+    expect(wordReplace(sentence, "dog", "cat")).to.equal("The cat, went for a cat, walk.");
+  });
 });

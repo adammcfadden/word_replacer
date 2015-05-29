@@ -2,8 +2,11 @@ var wordReplace = function(sentence, findWord, replaceWord) {
   var sentenceArray = sentence.split(" ");
 
   sentenceArray.forEach(function(word,index) {
+    var wordMinusPunctuation = word.slice(0, (word.length - 1))
     if (word === findWord) {
       sentenceArray[index] = replaceWord;
+    } else if (wordMinusPunctuation === findWord) {
+      sentenceArray[index] = (replaceWord + word.slice(-1));
     }
   });
 
