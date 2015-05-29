@@ -7,4 +7,9 @@ describe("wordReplace", function(){
   it("will find a word within a sentence and replace that word with the given word.", function() {
     expect(wordReplace(sentence, "dog", "cat")).to.equal("The cat went for a walk.");
   });
+
+  it("will find a word within a sentence and replace that word with the given word in multiple places.", function() {
+    sentence = "The dog went for a dog walk.";
+    expect(wordReplace(sentence, "dog", "cat")).to.equal("The cat went for a cat walk.");
+  });
 });
